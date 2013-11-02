@@ -1,0 +1,115 @@
+/* css reset */
+html,body,header,section,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,img {margin: 0px;padding: 0px;}
+body{background: #ffffff;line-height: 24px;font-size: 14px;color: #444444;
+    font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
+    /*font-family: "Microsoft Yahei", "Helvetica Neue", "Luxi Sans",Tahoma, "Hiragino Sans GB",arial, STHeiti ,Sans-serif!important;*/
+}
+input,textarea{outline: medium none;}
+table {border-collapse: collapse;border-spacing: 0}
+fieldset,img {border: 0}
+i,address,caption,cite,code,dfn,em,strong,th,var {font-style: normal;font-weight: normal;}
+/*ol,ul {list-style: none}*/
+caption,th {text-align: left;}
+q:before,q:after {content: ''}
+abbr,acronym {border: 0}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/*特别定义的字体*/
+.font_special{font-family: "Microsoft Yahei","SimHei", "Helvetica Neue";}
+
+/* 文字排版 */
+.f12 {font-size: 12px;}
+.f13 {font-size: 13px;}
+.f14 {font-size: 14px;}
+.f16 {font-size: 16px;}
+.f18 {font-size: 18px;}
+.f20 {font-size: 20px;}
+.f22 {font-size: 22px;}
+.f24 {font-size: 24px;}
+.fb {font-weight: bold;}
+.fn {font-weight: normal;}
+.t2 {text-indent: 2em}
+.lh150 {line-height: 150%}
+.lh180 {line-height: 180%}
+.lh200 {line-height: 200%}
+/*.lh22{line-height: 20px;}*/
+.unl {text-decoration: underline}
+.no_unl {text-decoration: none}
+
+.pc1{color: #595959}
+.pc2{color: #333333}
+.pc3{color: #999999}
+.pc5{color: #737373}
+.pc4{color: #444444}
+.pc6{color: #ffffff}
+.pc10{color: #DBDBDB}
+.pc11{color: #8e4000}
+.pc12{color: #86b147}
+.pc13{color: #666666}
+.pc14{color: #c89583}
+
+/* 编辑用色 */
+.pc7{color: #e16552}
+.pc8{color: #609e23}
+.pc9{color: #9163b6}
+
+/* 定位 */
+.tl {text-align: left;}
+.tc {text-align: center;}
+.tr {text-align: right;}
+.bc {margin-left: auto;margin-right: auto;}
+.fl {float: left;display: inline;}
+.fr {float: right;display: inline;}
+.cb {clear: both;}
+.cl {clear: left;}
+.cr {clear: right;}
+.clearfix:after{content: '.';display: block;height: 0;clear: both;visibility: hidden;}.clearfix{display:inline-block;}* html.clearfix{height: 1%}. Clearfix {display: block;}
+.vm {vertical-align: middle;}
+.pr {position: relative;}
+.pa {position: absolute;}
+.abs-right {position: absolute;right: 0}
+.zoom {zoom:1}
+.hidden {visibility: hidden;}
+.none {display: none;}
+.inline {display: inline-block;}
+
+/* 距离 */
+.mt{margin-top: 20px;}
+.mb{margin-bottom: 20px;}
+.mt10{margin-top: 10px;}
+.mb10{margin-bottom: 10px;}
+.mb5{margin-bottom: 5px;}
+.mt5{margin-top: 5px;}
+.mb15{margin-bottom: 15px;}
+.mt15{margin-top: 15px;}
+.ml5{margin-left: 5px}
+.ml10{margin-left: 10px}
+.mr10{margin-right: 10px;}
+.mr60{margin-right: 56px;}
+.mt25{margin-top: 25px;}
+
+.pt{padding-top: 20px;}
+.pb{padding-bottom: 20px;}
+.pt10{padding-top: 10px;}
+.pb10{padding-bottom: 10px;}
+.pt6{padding-top: 6px;}
+
+/* 图片尺寸 */
+.picture12 {width: 12px;height: 12px;border-radius: 3px;}
+.picture25 {width: 25px;height: 25px;border-radius: 3px;}
+.picture40 {width: 40px;height: 40px;border-radius: 3px;}
+.picture38 {width: 38px;height: 38px;border-radius: 3px;}
+.picture48 {width: 48px;height: 48px;border-radius: 3px;}
+.picture100 {width: 100px;height: 100px;border-radius: 5px;}
+.mpicture130 { max-width: 130px;max-height: 130px;}
+.mpicture160 { max-width: 160;max-height: 160;}
+
+/* 注释样式 */
+.noteBG {
+    background: yellow;
+}
+.noteBG p{
+    width: 600px;margin:0px auto;padding: 20px;
+}

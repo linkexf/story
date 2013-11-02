@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{#    <!-- Le styles -->#}
+{#    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.css')}}">#}
+{##}
+{#    <!--[if lte IE 6]>#}
+{#    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap-ie6.css')}}">#}
+{#    <![endif]-->#}
+{#    <!--[if lte IE 7]>#}
+{#    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie.css')}}">#}
+{#    <![endif]-->#}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/story-responsive.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+
+    <title>story</title>
+</head>
+<body>
+<!-- 头部全部内容=================start -->
+<header class="page-head" id="page-header">
+    <div class="header_top"></div>
+    <div class="container">
+        <div class="header_back">
+            <h1 class="site-title">
+                <a href="/">Story Demo</a>
+            </h1>
+            <div class="social-links">
+                {% if g.user %}
+                <a href="/">创建Story</a>
+                <a href="{{ url_for('user.index',name=g.user.name) }}">个人主页</a>
+                <a href="{{ url_for('user.settings') }}">设置</a>
+                <a href="{{ url_for('user.logout',next=request.path) }}">退出</a>
+                {% else %}
+                <a href="{{ url_for('user.login',next=request.path) }}">登录</a>
+                <a href="{{ url_for('user.signup',next=request.path) }}">注册</a>
+                {% endif %}
+            </div>
+        </div>
+    </div> <!-- /container -->
+</header> <!-- /page-head -->
+
+
+{% block content %}
+{% endblock %}
+
+
+<div id="footer">
+    <div class="footer_bg">
+        <div class=" container footer_wrapper">
+            <div class="footer_l">
+                <p class="fl">
+                    <img src="{{ url_for('static',filename='img/weibo.png')}}" class="footer_img">
+                    新浪微博
+                    <a href="http://e.weibo.com/chengmicom" class="footlink" target="_blank">@Story</a>
+                </p>
+                <p class="fl">
+                    <img src="{{ url_for('static',filename='img/weixin.png')}}" class="footer_img">
+                    微信公众账号 Story
+                </p>
+            </div>
+            <div class="footer_r">
+                <p>
+                    <a href="http://www.chengmi.com" class="footlink">Story</a>
+                    © 2013 京ICP备11041926号-5
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

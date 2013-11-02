@@ -1,0 +1,72 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    <div class="page-content" id="page-content">
+        <div class="container">
+            <div class="posts">
+                <div class="widget">
+                    <div class="cell">头像上传</div>
+                    <form id="upload_form" action="{{ url_for('user.upload') }}" enctype="multipart/form-data" method="post">
+                        {{ form.csrf_token }}
+
+                        <div class="form-control">
+                            <label class="control-label">当前头像:</label>
+                            <div class="controls">
+                                {% if g.user.photo %}
+                                    <img src="{{  g.user.photo  }}">
+                                {% else %}
+                                    <img src="{{ url_for('static',filename='img/tumblr_static_avatar.png')}}">
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <input type=file name=photo>
+
+                        <div class="form-control">
+                            <div class="controls">
+                                <button type="submit" class="btn btn-lg btn-primary btn-block">开始上传</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="widget">
+                    <div class="cell">更改密码</div>
+                    <form id="login_form" action="{{ url_for('user.change_password') }}" method="post">
+                        {{ form.csrf_token }}
+                        <div class="form-control">
+                            <label class="control-label" for="password_old">当前密码:</label>
+                            <div class="controls">
+                                <input type="password" class="form-input" id="password_old" name="password_old">
+                            </div>
+                        </div>
+
+                        <div class="form-control">
+                            <label class="control-label" for="password">新密码:</label>
+                            <div class="controls">
+                                <input type="password" class="form-input" id="password" name="password">
+                            </div>
+                        </div>
+
+                        <div class="form-control">
+                            <label class="control-label" for="password_again">再次输入新密码:</label>
+                            <div class="controls">
+                                <input type="password" class="form-input" id="password_again" name="password_again" >
+                            </div>
+                        </div>
+
+                        <div class="form-control">
+                            <div class="controls">
+                                <button type="submit" class="btn btn-lg btn-primary btn-block">更改密码</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            {% from "common/common.html" import render_user_sidebar %}
+            {{ render_user_sidebar(g.user) }}
+
+        </div>
+    </div>
+{% endblock %}

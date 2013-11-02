@@ -1,0 +1,28 @@
+{% macro render_user_sidebar(user) %}
+    <div class="sidebar">
+        <div class="widget">
+            <div class="user-nav">
+                <span class="user-image">
+                {% if user.photo %}
+                    <img src="{{  user.photo  }}">
+                {% else %}
+                    <img src="{{ url_for('static',filename='img/tumblr_static_avatar.png')}}">
+                {% endif %}
+                </span>
+                <div class="user-info">
+                    <h2 class="user-name">{{ user.name }}</h2>
+                    <span class="user-count">{{ user.following_count }} follows / {{ user.post_count }} posts</span>
+                </div>
+                <div class="user-action">
+                    <a class="btn btn-danger btn-lg btn-block" href="http://twitter.com/monstercritic" target="_blank">
+                        Follow
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget">
+            <div class="cell"><h4>修改密码</h4></div>
+        </div>
+    </div>
+{% endmacro %}

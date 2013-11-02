@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    <div class="page-content" id="page-content">
+        <div class="container">
+
+            <div class="posts">
+                <div class="widget"></div>
+            </div>
+
+            {% from "common/common.html" import render_user_sidebar %}
+            {{ render_user_sidebar(user) }}
+
+        </div>
+    </div>
+{% endblock %}

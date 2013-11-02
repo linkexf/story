@@ -1,0 +1,282 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static',filename='css/base.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/responsive.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/page.css')}}" rel="stylesheet">
+
+    <title>
+        城觅 - 发现最近值得去做的事情
+
+    </title>
+</head>
+<body>
+<div id="wrapper">
+<!-- 头部全部内容=================start -->
+<div class="header_top"></div>
+<header id="header">
+    <div class="header_bg">
+        <div class="header_back">
+            <div class="header_logo fl">
+                <a href="http://www.chengmi.com" alt="城觅"></a>
+            </div>
+            <div class="header_logoright fr"></div>
+        </div>
+    </div>
+</header>
+<!-- 头部全部内容=================end -->
+<input type="hidden" name="_xsrf" value="52b580a422ae4cf5af2ea8fcccfec0cd"/>
+
+<section id="section_filterall">
+    <div class="section_filter f13">
+        <div class="filter_classes_item fl">
+            <div class="fl mr60 filter_classes_itemone">
+                <label class="filter_classes_title fl fb">类别</label>
+                <ul>
+
+                    <li><a href="javascript:;" class="categoryselcss" data-action="all">全部</a></li>
+                    <li><a href="javascript:;" class="categoryselcss" data-action="dining">美食</a></li>
+                    <li><a href="javascript:;" class="categoryselcss" data-action="event">活动</a></li>
+                    <li><span>戏剧</span></li>
+                    <li><a href="javascript:;" class="categoryselcss" data-action="shopping">小店</a></li>
+                    <li><a href="javascript:;" class="categoryselcss" data-action="food">食材</a></li>
+                    <li><a href="javascript:;" class="categoryselcss" data-action="course">课程</a></li>
+                    <li><a href="javascript:;" class="categoryselcss" data-action="other">其他</a></li>
+
+                </ul>
+            </div>
+            <div class="fl filter_classes_itemone">
+                <label class="filter_classes_title fl fb">时间</label>
+                <ul>
+
+                    <li><a href="javascript:;" class="timeselcss" data-action="all">全部</a></li>
+                    <li><span>今天</span></li>
+                    <li><a href="javascript:;" class="timeselcss" data-action="tomorrow">明天</a></li>
+                    <li><a href="javascript:;" class="timeselcss" data-action="weekend">周末</a></li>
+                    <li><a href="javascript:;" class="timeselcss" data-action="thisweek">最近一周</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="section_filterall_select">
+    <div class="section_filter_select f13">
+        <div class="section_filtersize900 mb">
+            <select onchange="categorychange()" id="categorychangesel">
+                <option value="all" >全部类别</option>
+                <option value="dining" >美食</option>
+                <option value="event" >活动</option>
+                <option value="play" selected="selected">戏剧</option>
+                <option value="shopping" >小店</option>
+                <option value="food" >食材</option>
+                <option value="course" >课程</option>
+                <option value="other" >其他</option>
+            </select>
+        </div>
+        <div class="section_filtersize900">
+            <select onchange="timechange()" id="timechangesel">
+                <option value="all" >全部时间</option>
+                <option value="today" selected="selected">今天</option>
+                <option value="tomorrow" >明天</option>
+                <option value="weekend" >周末</option>
+                <option value="thisweek" >最近一周</option>
+            </select>
+        </div>
+    </div>
+</section>
+<section id="section">
+    <div class="section_all">
+        <ul class="section_ul">
+
+
+
+            <!-- 块全部=================start -->
+            <li class="iphone_li">
+                <!-- 块内容标题=================start -->
+                <div class="li_title">
+                    <div class="li_title_tag fl" style="background-color:#74c493">
+                        戏剧 </div>
+                    <p class="fl f16 font_special">
+                        <a href="/section/57" target="_blank" class="titleIndex">话剧「新青猿」</a>
+                    </p>
+                </div>
+                <!-- 块内容标题=================end -->
+                <!-- 块内容图片=================start -->
+                <a href="/section/57" target="_blank" class="titleIndex">
+                    <div class="iphone_250">
+
+
+
+
+
+                        <img src="http://chengmi.b0.upaiyun.com/cm/fb5730fd-f8d0-4673-8f51-9f4037616479.jpg_cmindex250" class="section_all_img">
+                        <!-- for pickey end -->
+                    </div>
+                </a>
+                <!-- 块内容图片=================end -->
+                <!-- 块内容个人信息=================start -->
+                <div class="iphone_people">
+                    <img src="http://chengmi.b0.upaiyun.com/avatar/a08131e2-1c76-48ad-a12a-62eeda89676c.jpg_headimg" class="content_portrait">
+                    <p>
+                        <span class="people_name">圆脸小杉杉</span>
+<span class="people_time fr f12 pc3">
+<span>6天前</span>
+
+<span class="ml5 fb">想做</span>
+
+</span>
+                        </span>
+                    </p>
+                </div>
+                <!-- 块内容个人信息=================end -->
+                <!-- 块内容摘要=================start -->
+                <div class="mb15">
+                    <p class="li_title">极富创造性的导演将喜剧的核嵌进悲剧，12位奇葩演员历时2个月的排练变成手中锃锃发亮的利剑，给你从未有过的，<b>令你深深惊呆的观剧体验</b>。</p>
+                </div>
+                <!-- 块内容摘要=================end -->
+            </li>
+            <!-- 块全部=================end -->
+
+            <!-- 块全部=================start -->
+            <li class="iphone_li">
+                <!-- 块内容标题=================start -->
+                <div class="li_title">
+                    <div class="li_title_tag fl" style="background-color:#74c493">
+                        戏剧 </div>
+                    <p class="fl f16 font_special">
+                        <a href="/section/40" target="_blank" class="titleIndex">精工之鸟 舞剧「孔雀」</a>
+                    </p>
+                </div>
+                <!-- 块内容标题=================end -->
+                <!-- 块内容图片=================start -->
+                <a href="/section/40" target="_blank" class="titleIndex">
+                    <div class="iphone_250">
+
+
+
+
+
+                        <img src="http://chengmi.b0.upaiyun.com/cm/2a22c629-2bfc-4cdd-8550-6b3099953a81.jpg_cmindex250" class="section_all_img">
+                        <!-- for pickey end -->
+                    </div>
+                </a>
+                <!-- 块内容图片=================end -->
+                <!-- 块内容个人信息=================start -->
+                <div class="iphone_people">
+                    <img src="http://chengmi.b0.upaiyun.com/avatar/a08131e2-1c76-48ad-a12a-62eeda89676c.jpg_headimg" class="content_portrait">
+                    <p>
+                        <span class="people_name">圆脸小杉杉</span>
+<span class="people_time fr f12 pc3">
+<span>13-09-12</span>
+
+<span class="ml5 fb">想做</span>
+
+</span>
+                        </span>
+                    </p>
+                </div>
+                <!-- 块内容个人信息=================end -->
+                <!-- 块内容摘要=================start -->
+                <div class="mb15">
+                    <p class="li_title">孔雀公主杨丽萍历时四十年的艺术沉淀，以一部惊艳开屏的舞剧《孔雀》完美收官。此后她将退居幕后，舞台生涯的<b>挂靴神作</b>，不容错过。<br /></p>
+                </div>
+                <!-- 块内容摘要=================end -->
+            </li>
+            <!-- 块全部=================end -->
+
+            <!-- 块全部=================start -->
+            <li class="iphone_li">
+                <!-- 块内容标题=================start -->
+                <div class="li_title">
+                    <div class="li_title_tag fl" style="background-color:#74c493">
+                        戏剧 </div>
+                    <p class="fl f16 font_special">
+                        <a href="/section/34" target="_blank" class="titleIndex">看剧大业「青戏节」</a>
+                    </p>
+                </div>
+                <!-- 块内容标题=================end -->
+                <!-- 块内容图片=================start -->
+                <a href="/section/34" target="_blank" class="titleIndex">
+                    <div class="iphone_250">
+
+
+
+
+
+                        <img src="http://chengmi.b0.upaiyun.com/cm/1ee019fe-cb04-4420-bb6c-286cebd750c9.jpg_cmindex250" class="section_all_img">
+                        <!-- for pickey end -->
+                    </div>
+                </a>
+                <!-- 块内容图片=================end -->
+                <!-- 块内容个人信息=================start -->
+                <div class="iphone_people">
+                    <img src="http://chengmi.b0.upaiyun.com/index/e9f19945-3486-4eb5-b820-845e4659c000.jpg_headimg" class="content_portrait">
+                    <p>
+                        <span class="people_name">小胖缘</span>
+<span class="people_time fr f12 pc3">
+<span>13-09-05</span>
+
+<span class="ml5 fb">做过</span>
+
+</span>
+                        </span>
+                    </p>
+                </div>
+                <!-- 块内容个人信息=================end -->
+                <!-- 块内容摘要=================start -->
+                <div class="mb15">
+                    <p class="li_title">孟京辉老师在微博上以不怕传谣之势说：这是一个<b>特别牛逼的戏剧节。</b>你平常看不到想不到碰不到的牛逼戏剧齐集北京。～信不信由你，也不由你不信！</p>
+                </div>
+                <!-- 块内容摘要=================end -->
+            </li>
+            <!-- 块全部=================end -->
+
+
+        </ul>
+        <div class="bottom_loading" style="display: none">
+<span>
+<img src="/static/images/loading.gif?v=b016b"
+     class="load_more_img">请稍等，努力加载数据中
+</span>
+            <input type="hidden" id="hiddenpage" value="1" />
+        </div>
+    </div>
+</section>
+<input type="hidden" id="hiddentime" value="today" />
+<input type="hidden" id="hiddencategory" value="play" />
+
+<footer id="footer">
+    <div class="footer_bg">
+        <div class="footer_wrapper">
+            <div class="fl footer_l">
+                <p class="fl">
+                    <img src="{{ url_for('static',filename='img/weibo.png')}}" class="footer_img">
+                    新浪微博
+                    <a href="http://e.weibo.com/chengmicom" class="footlink" target="_blank">@Story</a>
+                </p>
+                <p class="fl">
+                    <img src="{{ url_for('static',filename='img/weixin.png')}}" class="footer_img">
+                    微信公众账号 Story
+                </p>
+            </div>
+            <div class="footer_r">
+                <p>
+                    <a href="http://www.chengmi.com" class="footlink">Story</a>
+                    © 2013 京ICP备11041926号-5
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="{{ url_for('static',filename='js/jquery-1.10.2.min.js')}}"></script>
+<script src="{{ url_for('static',filename='js/tools.js')}}"></script>
+<script src="{{ url_for('static',filename='js/ga.js')}}"></script>
+
+<script src="{{ url_for('static',filename='js/index.js')}}"></script>
+<script src="{{ url_for('static',filename='js/loadmore.js')}}"></script>
+
+</body>
+</html>

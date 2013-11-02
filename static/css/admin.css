@@ -1,0 +1,88 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    height: 100%;
+}
+.navbar{
+    margin-bottom: 0px;
+    border-radius:0px;
+}
+.container {
+    width: auto;
+}
+
+.slide-body{
+    position:relative;
+    left:0;
+    overflow:hidden
+}
+
+.slide-body .inner{
+    overflow:hidden;
+    left:0;
+    position:relative
+}
+
+.page_navbar{
+    border-bottom:1px solid #e1e1e1;
+    -webkit-box-shadow:0 0 3px #eee,inset 0 0 3px #fff;
+    box-shadow:0 0 3px #eee,inset 0 0 3px #fff;
+    background:#f9f9f7
+}
+
+.page_navbar .page-navbar-warp{
+    width:97%;
+    margin:0 auto;
+    height:59px;
+    position:relative
+}
+.page_navbar .page-navbar-warp .title{
+    position:absolute;
+    top:0;
+    left:0;
+    width:180px;
+    color:#d84c31;
+    white-space:nowrap;
+    line-height:59px;
+    text-shadow:0 2px 0 #fff,0 -2px 0 #f2f2ea
+}
+.page_navbar .page-navbar-warp .title h3{
+     display:inline;
+    min-width:100px;
+    margin:0;
+    line-height:59px;
+    font-size:20px
+}
+.page_navbar .page-navbar-warp .title h3 a{
+    color:#d84c31;
+    padding:10px 15px;
+    border-radius:5px;
+    margin-left:-15px
+}
+.page_navbar .page-navbar-warp .title h3 a:hover{
+    color:#d84c31;
+    background:#f2f2ea
+}
+.page_navbar .page-navbar-warp .title .subtitle{
+    display:none !important;
+    display:inline-block;
+    zoom:1;
+    color:#222;
+    min-height:25px !important;
+    padding:3px 25px;
+    border-left:solid 1px #e3e3e3;
+    margin-left:20px
+}
+.page_navbar .page-navbar-warp .main{
+    padding-top:10px;
+    margin-left:180px
+}
+
+.layout_leftright{position:relative}.layout_leftright .leftpanel{position:absolute;top:0;left:0;width:199px;margin-left:0;border-right:1px solid #e1e1e1;background:#f9f9f7;-webkit-box-shadow:0 0 3px #eee,inset 0 0 3px #fff;box-shadow:0 0 3px #eee,inset 0 0 3px #fff}.layout_leftright .leftpanel.collapse{position:absolute;width:20px;overflow:hidden;left:0;background:#ff0}
+.layout_leftright .leftpanel.expand{position:relative}
+.layout_leftright .leftpanel .switch{position:relative;width:10px;overflow:hidden;right:0;background:#ff0}
+.layout_leftright .rightpanel{margin-left:200px}
+.demo{
+    position:relative; height:100%; overflow:hidden; max-width:100%;
+}

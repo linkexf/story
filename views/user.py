@@ -38,6 +38,7 @@ def signup():
     if request.method == "POST" and form.validate():
         user = User()
         form.populate_obj(user)
+        user.password = hash_str(form.password.data)
         user.save()
         return redirect('/user')
     return render_template('signup.html', form=form)

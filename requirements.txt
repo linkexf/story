@@ -1,0 +1,10 @@
+flask-mongoalchemy
+flask-principal
+flask-wtf
+flask-script
+flask-babel
+Flask-Cache
+Flask-SQLAlchemy
+Flask-Mail
+Flask-Uploads
+flask-markdown

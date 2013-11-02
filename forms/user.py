@@ -1,8 +1,9 @@
 __author__ = 'damlin'
 #coding=utf-8
 from flask import g
-from flask.ext.wtf import Form, TextField, ValidationError, \
-    required, email, PasswordField, equal_to
+from flask.ext.wtf import Form
+from wtforms import TextField, PasswordField
+from wtforms.validators import required, email, equal_to, ValidationError
 from flask.ext.babel import gettext, lazy_gettext as _
 from .validators import is_username
 from models import User

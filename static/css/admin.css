@@ -1,8 +1,7 @@
 html, body {
     margin: 0px;
     padding: 0px;
-    min-height: 100%;
-    height: 100%;
+    overflow:hidden;
 }
 .navbar{
     margin-bottom: 0px;
@@ -79,10 +78,32 @@ html, body {
     margin-left:180px
 }
 
-.layout_leftright{position:relative}.layout_leftright .leftpanel{position:absolute;top:0;left:0;width:199px;margin-left:0;border-right:1px solid #e1e1e1;background:#f9f9f7;-webkit-box-shadow:0 0 3px #eee,inset 0 0 3px #fff;box-shadow:0 0 3px #eee,inset 0 0 3px #fff}.layout_leftright .leftpanel.collapse{position:absolute;width:20px;overflow:hidden;left:0;background:#ff0}
+.layout_leftright{position:relative}
+.layout_leftright .leftpanel{position:absolute;top:0;left:0;width:199px;margin-left:0;border-right:1px solid #e1e1e1;background:#f9f9f7;-webkit-box-shadow:0 0 3px #eee,inset 0 0 3px #fff;box-shadow:0 0 3px #eee,inset 0 0 3px #fff}.layout_leftright .leftpanel.collapse{position:absolute;width:20px;overflow:hidden;left:0;background:#ff0}
 .layout_leftright .leftpanel.expand{position:relative}
 .layout_leftright .leftpanel .switch{position:relative;width:10px;overflow:hidden;right:0;background:#ff0}
 .layout_leftright .rightpanel{margin-left:200px}
 .demo{
-    position:relative; height:100%; overflow:hidden; max-width:100%;
+    position:relative;max-width:100%;
 }
+.height-nonav{overflow: auto}
+
+ul.nav_listmenu{margin:0;padding:0}ul.nav_listmenu li.menu-star i{color:#ffd860}
+ul.nav_listmenu li{list-style-type:none;line-height:48px}ul.nav_listmenu li:before,ul.nav_listmenu li:after{content:" ";display:table;}
+ul.nav_listmenu li:after{clear:both}
+ul.nav_listmenu li:before,ul.nav_listmenu li:after{content:" ";display:table;}
+ul.nav_listmenu li:after{clear:both}
+ul.nav_listmenu li.active a{color:#333 !important;background:#f2f2ea;border-radius:5px}
+ul.nav_listmenu li.menu a{display:block;text-decoration:none;color:rgba(51,51,51,0.7);text-shadow:0 2px 0 #fff,0 -2px 0 #f2f2ea;font-size:14px;padding-left:1.5em;margin:10px 10px 0 10px}ul.nav_listmenu li.menu a:hover{color:#333;background:#f2f2ea;border-radius:5px}
+ul.nav_listmenu li.menu a .new-item{color:#b3b3b3;position:relative;margin-right:10px;float:right}ul.nav_listmenu li.menu a .new-item:hover{color:#000}
+ul.nav_listmenu li.menu a:hover .action{visibility:visible}
+ul.nav_listmenu li.menu a .action{-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);visibility:hidden;position:absolute;top:6px;right:0;color:#bfbfbf;padding:23px;display:block}ul.nav_listmenu li.menu a .action.openpop{visibility:visible}
+ul.nav_listmenu li.menu a .action:hover{color:#000}
+ul.nav_listmenu li.menu a .action.openpop{visibility:visible}
+ul.nav_listmenu li.menu a .action:hover{color:#000}
+ul.nav_listmenu li.menu a .action small:hover{color:#000}
+ul.nav_listmenu li.iconmenu{line-height:150%}ul.nav_listmenu li.iconmenu a{display:block;color:rgba(51,51,51,0.7);text-shadow:0 2px 0 #fff,0 -2px 0 #f2f2ea;font-size:14px;padding-left:1.5em;text-indent:0;padding:10px 0;margin:15px 10px 0 10px;text-align:center}ul.nav_listmenu li.iconmenu a:hover{color:#333;background:#f2f2ea;border-radius:5px}
+ul.nav_listmenu li.iconmenu a i{font-size:25px}
+ul.nav_listmenu li.iconbtn{padding-left:8px}ul.nav_listmenu li.iconbtn a{display:inline-block;text-indent:0}
+ul.nav_listmenu li.title{font-size:16.52px;text-indent:1.1em}ul.nav_listmenu li.title span{float:right !important;float:right;color:#b3b3b3;margin-right:20px}ul.nav_listmenu li.title span a{display:inline}ul.nav_listmenu li.title span a:hover{background:transparent}
+ul.nav_listmenu li.divider-vertical{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5;margin:0 10px}

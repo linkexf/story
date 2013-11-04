@@ -95,7 +95,7 @@ html, body {
 /*.single-panel .single-panel-inner{margin:30px auto;margin-bottom:50px;border:1px solid #e1e1e1;-webkit-box-shadow:0 0 3px #eee,inset 0 0 3px #fff;box-shadow:0 0 3px #eee,inset 0 0 3px #fff;background:#fbfbfb}*/
 .single-panel .single-panel-inner h3,.single-panel .single-panel-inner h4{margin:0}
 /*.single-panel .row div{background: #fff;}*/
-.single-panel .row .aside{background: #f9f9f7;border-bottom:1px solid #d9d9d9;}
+.single-panel .row .aside{background: #fbfbfb;border-bottom:1px solid #d9d9d9;}
 .single-panel .row .middle{background: #fff;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;overflow-y:auto;overflow-x:hidden;-webkit-box-shadow:inset 0px -3px 8px rgba(0,0,0,0.13);-moz-box-shadow:inset 0px -3px 8px rgba(0,0,0,0.13);box-shadow:inset 0px -3px 8px rgba(0,0,0,0.13)}
 .single-panel .row .main{background: #fff;border-bottom:1px solid #d9d9d9;}
 

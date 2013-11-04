@@ -45,15 +45,18 @@ body {
 
 a {
   background: transparent;
+  text-decoration:none;
 }
 
 a:focus {
   outline: thin dotted;
+    text-decoration:none;
 }
 
 a:active,
 a:hover {
   outline: 0;
+  text-decoration:none;
 }
 
 h1 {

@@ -13,6 +13,7 @@
     {#    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie.css')}}">#}
     {#    <![endif]-->#}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrapv2.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/font-awesome.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/jquery.mCustomScrollbar.css')}}">
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/admin.css')}}">
@@ -82,11 +83,11 @@
         <div class="page_navbar ng-scope">
             <div class="page-navbar-warp">
                 <div class="title"> <h3><i class="icon-user mr_10"></i>帐户设置</h3> </div>
-                <div class="main"> <div class="pull-right"> <a href="/project/add" class="btn btn-danger">新建项目</a> </div> </div>
+                <div class="main"> <div class="pull-right"> <a href="/admin/new" class="btn btn-danger">新建项目</a> </div> </div>
             </div>
         </div>
         <div class="layout_leftright ng-scope">
-            <div class="leftpanel height-nonav">
+            <div class="leftpanel height-nonav scroll-nonav">
                 <div class="demo">
                     <ul class="nav_listmenu"> 
                         <li class="menu" ng-class="{true: 'active'}[current_menu == 'settings']"> 
@@ -122,7 +123,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="rightpanel height-nonav">dddd</div>
+            <div class="rightpanel height-nonav scroll-nonav">dddd</div>
         </div>
     </div>
 </div>
@@ -130,17 +131,4 @@
 </html>
 <script src="{{ url_for('static',filename='js/jquery-1.10.2.min.js')}}"></script>
 <script src="{{ url_for('static',filename='js/jquery.mCustomScrollbar.min.js')}}"></script>
-
-<script type="text/javascript">
-(function($){
-    $(".height-nonav").css("height", ($(window).height()-122) + "px");
-    $(window).resize(function() {
-        $(".height-nonav").css("height", ($(window).height()-122) + "px");
-    });
-    $(window).load(function(){
-        $(".height-nonav").mCustomScrollbar({
-            theme:"dark"
-        });
-    });
-})(jQuery);
-</script>
+<script src="{{ url_for('static',filename='js/admin.js')}}"></script>

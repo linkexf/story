@@ -115,7 +115,7 @@ html, body {
   background: #f9f9f7;
 }
 .middle .media-body h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 .middle .media-body .article-category {
   font-size: 18px;
@@ -140,6 +140,11 @@ html, body {
   margin: 0;
 }
 
+.main form{margin-bottom:0;height:100%;}
+.main .title,.main .markdown .text,.main .rich-text .text{-webkit-appearance:none;outline:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border:0;padding:0;height:50px;overflow:auto;}
+.main .title:focus,.main .markdown .text:focus,.main .rich-text .text:focus{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0),0 0 8px rgba(82,168,236,0);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0),0 0 8px rgba(82,168,236,0);box-shadow:inset 0 1px 1px rgba(0,0,0,0),0 0 8px rgba(82,168,236,0);outline-style:none}
+.main .title{width:100%;height:10%;padding:10px 3px 10px 0px;border-bottom:1px dotted #d9d9d9;margin-bottom:0px;font-family:Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;font-size:30px;font-weight:normal;line-height:30px;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.main .markdown .text{font-family:Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;font-size:16px;font-weight:normal;line-height:25px;width:100%;height:88%;margin-bottom:0;padding:20px 3px 0px 0px;resize:none}
 
 ul.nav_listmenu{margin:0;padding:0}ul.nav_listmenu li.menu-star i{color:#ffd860}
 ul.nav_listmenu li{list-style-type:none;line-height:48px}ul.nav_listmenu li:before,ul.nav_listmenu li:after{content:" ";display:table;}

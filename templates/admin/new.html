@@ -163,11 +163,11 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-7 main height-nonav scroll-nonav">
+                    <div class="col-lg-7 main height-nonav">
                         <form class="note-form  markdown" data-note-id="59698" onsubmit="return false;">
-                            <input class="title form-control" name="note_name" type="text" value="Untitled">
-                            <textarea class="text form-control" name="note_content">
-                            </textarea>
+                            <input class="title" name="note_name" type="text" value="Untitled">
+                            <TEXTAREA class="text mousetrap" name="note_content">
+                            </TEXTAREA>
                         </form>
                     </div>
                 </div>
@@ -180,4 +180,5 @@
 </html>
 <script src="{{ url_for('static',filename='js/jquery-1.10.2.min.js')}}"></script>
 <script src="{{ url_for('static',filename='js/jquery.mCustomScrollbar.min.js')}}"></script>
+<script src="{{ url_for('static',filename='js/mousetrap.js')}}"></script>
 <script src="{{ url_for('static',filename='js/admin.js')}}"></script>

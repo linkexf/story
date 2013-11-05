@@ -2,6 +2,8 @@ html, body {
     margin: 0px;
     padding: 0px;
     /*overflow:hidden;*/
+    overflow-y:auto;
+    overflow-x:hidden; 
 }
 
 .mr_10{
@@ -9,7 +11,7 @@ html, body {
 }
 .navbar{
     margin-bottom: 0px;
-    border-radius:0px;
+    border-radius:0px;javascript:;
 }
 .container {
     width: auto;
@@ -91,15 +93,15 @@ html, body {
     position:relative;max-width:100%;
 }
 .height-nonav{overflow: auto}
-.single-panel{background:#f9f9f7;overflow:hidden}
+.single-panel{background:#fbfbfb;overflow:hidden}
 /*.single-panel .single-panel-inner{margin:30px auto;margin-bottom:50px;border:1px solid #e1e1e1;-webkit-box-shadow:0 0 3px #eee,inset 0 0 3px #fff;box-shadow:0 0 3px #eee,inset 0 0 3px #fff;background:#fbfbfb}*/
 .single-panel .single-panel-inner h3,.single-panel .single-panel-inner h4{margin:0}
 /*.single-panel .row div{background: #fff;}*/
-.single-panel .row .aside{background: #fbfbfb;border-bottom:1px solid #d9d9d9;}
-.single-panel .row .middle{background: #fff;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;overflow-y:auto;overflow-x:hidden;-webkit-box-shadow:inset 0px -3px 8px rgba(0,0,0,0.13);-moz-box-shadow:inset 0px -3px 8px rgba(0,0,0,0.13);box-shadow:inset 0px -3px 8px rgba(0,0,0,0.13)}
-.single-panel .row .main{background: #fff;border-bottom:1px solid #d9d9d9;}
+.single-panel .row-fluid .aside{background: #fbfbfb;border-bottom:1px solid #d9d9d9;}
+.single-panel .row-fluid .middle{background: #fff;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;overflow-y:auto;overflow-x:hidden;-webkit-box-shadow:inset 0px -3px 8px rgba(0,0,0,0.13);-moz-box-shadow:inset 0px -3px 8px rgba(0,0,0,0.13);box-shadow:inset 0px -3px 8px rgba(0,0,0,0.13)}
+.single-panel .row-fluid .main{background: #fff;border-bottom:1px solid #d9d9d9;}
 
-.aside .entry-new.entry-add{padding-top:10px;padding-left:15px;border:0;-webkit-box-shadow:0 0 0 #fff, inset 0 0 0 #FFF;box-shadow:0 0 0 #fff, inset 0 0 0 #FFF}
+.aside .entry-new.entry-add{padding-top:10px;padding-left:15px;padding-right: 15px;border:0;-webkit-box-shadow:0 0 0 #fff, inset 0 0 0 #FFF;box-shadow:0 0 0 #fff, inset 0 0 0 #FFF}
 .aside .entry-new a.entry-add{display:block;border:dashed 1px #ddd;border-radius:3px;text-align:center;line-height:30px;width:100%;background:#f9f9f7;color:#bbb;font-size:16px}
 .aside .entry-new a.entry-add:hover{border:dashed 1px #bfbfbf;color:#333;text-decoration:none;}
 
@@ -143,8 +145,8 @@ html, body {
 .main form{margin-bottom:0;height:100%;}
 .main .title,.main .markdown .text,.main .rich-text .text{-webkit-appearance:none;outline:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border:0;padding:0;height:50px;overflow:auto;}
 .main .title:focus,.main .markdown .text:focus,.main .rich-text .text:focus{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0),0 0 8px rgba(82,168,236,0);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0),0 0 8px rgba(82,168,236,0);box-shadow:inset 0 1px 1px rgba(0,0,0,0),0 0 8px rgba(82,168,236,0);outline-style:none}
-.main .title{width:100%;height:10%;padding:10px 3px 10px 0px;border-bottom:1px dotted #d9d9d9;margin-bottom:0px;font-family:Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;font-size:30px;font-weight:normal;line-height:30px;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.main .markdown .text{font-family:Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;font-size:16px;font-weight:normal;line-height:25px;width:100%;height:88%;margin-bottom:0;padding:20px 3px 0px 0px;resize:none}
+.main .title{width:100%;height:10%;padding:10px 3px 10px 15px;border-bottom:1px dotted #d9d9d9;margin-bottom:0px;font-family:Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;font-size:30px;font-weight:normal;line-height:30px;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.main .markdown .text{font-family:Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;font-size:16px;font-weight:normal;line-height:25px;width:100%;height:88%;margin-bottom:0;padding:20px 3px 0px 15px;resize:none}
 
 ul.nav_listmenu{margin:0;padding:0}ul.nav_listmenu li.menu-star i{color:#ffd860}
 ul.nav_listmenu li{list-style-type:none;line-height:48px}ul.nav_listmenu li:before,ul.nav_listmenu li:after{content:" ";display:table;}
@@ -165,3 +167,7 @@ ul.nav_listmenu li.iconmenu a i{font-size:25px}
 ul.nav_listmenu li.iconbtn{padding-left:8px}ul.nav_listmenu li.iconbtn a{display:inline-block;text-indent:0}
 ul.nav_listmenu li.title{font-size:16.52px;text-indent:1.1em}ul.nav_listmenu li.title span{float:right !important;float:right;color:#b3b3b3;margin-right:20px}ul.nav_listmenu li.title span a{display:inline}ul.nav_listmenu li.title span a:hover{background:transparent}
 ul.nav_listmenu li.divider-vertical{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5;margin:0 10px}
+
+/*.row-fluid [class*="span"]{
+   margin-left: 0;
+}*/

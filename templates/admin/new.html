@@ -13,6 +13,7 @@
     {#    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie.css')}}">#}
     {#    <![endif]-->#}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrapv2.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap-responsive.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/font-awesome.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/jquery.mCustomScrollbar.css')}}">
 
@@ -87,13 +88,13 @@
         </div>
         <div class="single-panel">
             <div class="single-panel-inner">
-                <div class="row">
-                    <div class="col-lg-2 aside height-nonav scroll-nonav">
+                <div class="row-fluid">
+                    <div class="span2 aside height-nonav scroll-nonav">
                         <div class="entry-new entry-add">
                             <a href="javascript:;"class="entry-add" style=""> <i class="fa fa-plus-circle"></i> 新建类目 </a>
                         </div>
                     </div>
-                    <div class="col-lg-3 middle height-nonav scroll-nonav">
+                    <div class="span3 middle height-nonav scroll-nonav">
                         <div class="new-note">
                             <a href="javascript:void(0)" data-action="create-note" class="new-note-link">
                                 <i class="fa fa-pencil"></i>
@@ -163,11 +164,10 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-7 main height-nonav">
+                    <div class="span7 main height-nonav">
                         <form class="note-form  markdown" data-note-id="59698" onsubmit="return false;">
-                            <input class="title" name="note_name" type="text" value="Untitled">
-                            <TEXTAREA class="text mousetrap" name="note_content">
-                            </TEXTAREA>
+                            <input class="title" name="note_name" type="text" value="">
+                            <textarea  class="text mousetrap" name="note_content"></textarea>
                         </form>
                     </div>
                 </div>
